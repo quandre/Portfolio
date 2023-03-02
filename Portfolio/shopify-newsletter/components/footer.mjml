@@ -1,0 +1,94 @@
+<mj-raw>
+  <!-- footer -->
+</mj-raw>
+<mj-wrapper css-class="footer" padding="0">
+  <mj-section padding="0">
+    <mj-group css-class="icons-size">
+      <mj-column padding="0">
+        <mj-image
+          src="https://mcusercontent.com/d7f5ddea78f306ae73fdf52a5/images/20b2a57b-08a1-4d16-c5c7-f6fb84b4c7de.png"
+          alt="facebook"
+          href="https://facebook.com/shopify"
+          width="27px"
+          height="27px"
+          padding="0 5px"
+        />
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image
+          src="https://mcusercontent.com/d7f5ddea78f306ae73fdf52a5/images/1921a455-6db2-a6c9-0548-e876604fb87d.png"
+          alt="twitter"
+          href="https://twitter.com/shopify"
+          width="27px"
+          height="27px"
+          padding="0 5px"
+        />
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image
+          src="https://mcusercontent.com/d7f5ddea78f306ae73fdf52a5/images/d387391b-c399-d347-50ae-3cbbec701da4.png"
+          alt="instagram"
+          href="https://instagram.com/shopify"
+          width="27px"
+          height="27px"
+          padding="0 5px"
+        />
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image
+          src="https://mcusercontent.com/d7f5ddea78f306ae73fdf52a5/images/4d17d14f-5f04-2eff-3619-37d2f1a6d32d.png"
+          alt="snapchat"
+          href="https://www.snapchat.com/add/shopify?utm_source=exacttarget&utm_medium=email&utm_campaign=digest&utm_content=digest"
+          width="27px"
+          height="27px"
+          padding="0 5px"
+        />
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image
+          src="https://mcusercontent.com/d7f5ddea78f306ae73fdf52a5/images/47629627-6b27-c25f-3202-2275412db8d5.png"
+          alt="linkedin"
+          href="https://www.linkedin.com/company/shopify/?originalSubdomain=ca"
+          width="27px"
+          height="27px"
+          padding="0 5px"
+        />
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image
+          src="https://mcusercontent.com/d7f5ddea78f306ae73fdf52a5/images/f29f4bbc-4423-7f19-2296-3e50054d9041.png"
+          alt="pinterest"
+          href="https://www.pinterest.com/shopify/"
+          width="27px"
+          height="27px"
+          padding="0 5px"
+        />
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image
+          src="https://mcusercontent.com/d7f5ddea78f306ae73fdf52a5/images/3737afa1-52bf-ba33-8b7c-a32745462414.png"
+          alt="youtube"
+          href="https://www.youtube.com/shopify"
+          width="27px"
+          height="27px"
+          padding="0 5px"
+        />
+      </mj-column>
+    </mj-group>
+  </mj-section>
+  <mj-section padding="20px 0 0">
+    <mj-column padding="0">
+      <mj-text font-size="10px" align="center">
+        &copy Shopify, 151 O'Conner Street, Ground floor, Ottawa ON, K2P 2L8
+      </mj-text>
+    </mj-column>
+  </mj-section>
+  <mj-section padding="0 0 60px">
+    <mj-column padding="0">
+      <mj-text font-size="10px" align="center">
+        <a href="#" class="footer-links">Unsubscribe</a> |
+        <a href="#" class="footer-links">Manage Yopur Email Preferences</a>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-wrapper>
