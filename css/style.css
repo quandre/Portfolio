@@ -94,6 +94,10 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container{
 	max-width: 1400px;
 	width:100%;
@@ -571,7 +575,7 @@ h6 { font-size: 16px; }
 	left: -5px;
 	right: -5px;
 	bottom: -5px;
-	height: 110%;
+	height: 110.6%;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
