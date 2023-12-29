@@ -1,356 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paypal Transactional Email</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paypal Transactional Email</title>
-</head>
+    <!-- Hotjar Tracking Code for https://quandremyers.com/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2927136, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <!--End of  Hotjar Tracking Code for https://quandremyers.com/ -->
 
-<body style="background-color: #ffffff;">
-  <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-    <tr>
-      <!-- start of email -->
-      <td style="
-      background-color: #faf8f5;">
-        <table align="center" width="600" border="0" cellpadding="0" cellspacing="0" role="presentation">
-          <!-- start of hello section -->
-          <tr>
-            <td
-              style="padding-left: 10px; font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #687173; background-color: #ffffff;">
-              <p>hello, Steve Smith</p>
-            </td>
-          </tr>
-          <!-- end of hello section -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7JXQH2S71W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-          <!-- start of payment section -->
-          <tr>
-            <td
-              style="padding-top: 15px; padding-bottom: 15px; font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial, sans-serif; ">
-              <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <!-- logo -->
-                <tr>
-                  <td style="padding-left: 15px;"><img src="img/logo.png" alt="paypal logo" width="63"></td>
-                </tr>
-                <!-- payment -->
-                <tr>
-                  <td
-                    style="padding-left: 30px; padding-right: 30px;  padding-top: 20px; padding-bottom: 30px; font-size: 32px; color: #001c64; line-height: 1.3;">
-                    <p style="margin: 0;">You sent a payment of $21.59 <br> USD to Microsoft Corporation</p>
-                  </td>
-                </tr>
-                <!-- payment button -->
-                <tr>
-                  <td style="padding-left: 30px; padding-top: 10px; padding-right: 30px; ">
-                    <a href="#"
-                      style="text-decoration: none; font-size: 18px; color: #ffffff; background-color: #003087; padding: 14px 35px; border-radius: 50px">View
-                      or Manage Payment</a>
-                  </td>
-                </tr>
-                <!-- payment sub-text -->
-                <tr>
-                  <td style="padding-left: 30px; padding-right: 30px; padding-top: 40px; font-size: 14px;">
-                    <p style="padding-left: 3px;">It may take a few moments for this transaction to appear in your
-                      account.</p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- end of payment section -->
+      gtag("config", "G-7JXQH2S71W");
+    </script>
+    <!-- End of Google tag (gtag.js) -->
+    <style>
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 600px;
+          width: 100%;
+          padding: 20px;
+        }
+        .section-wrap {
+          display: block;
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+      }
+    </style>
+  </head>
 
-          <!-- start of Merchant info section -->
-          <tr>
-            <td align="center" style="padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <tr>
-                  <td align="center"
-                    style="padding: 20px 25px; border-radius: 20px; background-color: #ffffff; font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr>
-                        <td width="50%" style="line-height: 1.8; padding-left: 10px; padding-bottom: 20px;">
-                          <p style="font-size: 14px; font-weight: bold; margin: 0;">Transaction ID</p>
-                          <a href="#"
-                            style="color: #0070e0; text-decoration: none; font-size: 14px ">6F490637K1336655X</a>
-                        </td>
-                        <td width="50%" style="line-height: 1.8; padding-bottom: 20px;">
-                          <p style="font-size: 14px; font-weight: bold; margin: 0;">Transaction date</p>
-                          <p style="font-size: 14px; margin: 0;">Mar 11, 2023 15:35:47 EST</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="50%" style="line-height: 1.8; padding-bottom: 20px; padding-left: 10px;">
-                          <p style="font-size: 14px; font-weight: bold; margin: 0;">
-                            Merchant
-                          </p>
-                          <p style="font-size: 14px; margin: 0;">
-                            Microsoft Corporation
-                          </p>
-                        </td>
-                        <td width="50%" style="line-height: 1.8; padding-bottom: 20px;">
-                          <p style="font-size: 14px; font-weight: bold; margin: 0;">Instructions to merchant</p>
-                          <p style="font-size: 14px; margin: 0;">You haven't entered any instructions.</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="50%" style="line-height: 1.8; padding-left: 10px;">
-                          <p style="font-size: 14px; font-weight: bold; margin: 0;">
-                            Invoice ID
-                          </p>
-                          <p style="font-size: 14px; margin: 0;">Z521QZ8SEN6Q</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- end of Merchant info section -->
+  <body style="background-color: #ffffff">
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+    >
+      <tr>
+        <!-- start of email -->
+        <td style="background-color: #faf8f5">
+          <table
+            align="center"
+            width="600"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            class="container"
+          >
+            <!-- start of hello section -->
+            <tr>
+              <td
+                style="
+                  padding-left: 10px;
+                  font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial,
+                    sans-serif;
+                  font-size: 14px;
+                  color: #687173;
+                  background-color: #ffffff;
+                "
+              >
+                <p>hello, Steve Smith</p>
+              </td>
+            </tr>
+            <!-- end of hello section -->
 
-          <!-- start of transaction info section -->
-          <tr>
-            <td
-              style="padding-left: 30px; padding-right: 30px; padding-bottom: 40px; font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <!-- start of transaction info heading section -->
-                <tr style="background-color:#F5F7FA">
-                  <td width="40%"
-                    style="padding: 15px 10px; border-top: 1px solid #B7BCBF; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; font-weight: bold; margin: 0;">Description</p>
-                  </td>
-                  <td align="right" width="25%"
-                    style="padding: 15px 10px; border-top: 1px solid #B7BCBF; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; font-weight: bold; margin: 0; ">Unit price</p>
-                  </td>
-                  <td width="6%"
-                    style="padding: 15px 10px; border-top: 1px solid #B7BCBF; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; font-weight: bold; margin: 0; display: block;">Qty</p>
-                  </td>
-                  <td align="right" width="29%"
-                    style="padding: 15px 10px; border-top: 1px solid #B7BCBF; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; font-weight: bold; margin: 0;">Amount</p>
-                  </td>
-                </tr>
-                <!-- end of transaction info heading section -->
+            <!-- start of payment section -->
+            <tr>
+              <td
+                style="
+                  padding-top: 15px;
+                  padding-bottom: 15px;
+                  font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <table
+                  align="left"
+                  width="100%"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <!-- logo -->
+                  <tr>
+                    <td style="padding-left: 15px">
+                      <img src="img/logo.png" alt="paypal logo" width="63" />
+                    </td>
+                  </tr>
+                  <!-- payment -->
+                  <tr>
+                    <td
+                      style="
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 20px;
+                        padding-bottom: 30px;
+                        font-size: 32px;
+                        color: #001c64;
+                        line-height: 1.3;
+                      "
+                    >
+                      <p style="margin: 0">
+                        You sent a payment of $21.59 <br />
+                        USD to Microsoft Corporation
+                      </p>
+                    </td>
+                  </tr>
+                  <!-- payment button -->
+                  <tr>
+                    <td
+                      style="
+                        padding-left: 30px;
+                        padding-top: 10px;
+                        padding-right: 30px;
+                      "
+                    >
+                      <a
+                        href="#"
+                        style="
+                          text-decoration: none;
+                          font-size: 18px;
+                          color: #ffffff;
+                          background-color: #003087;
+                          padding: 14px 35px;
+                          border-radius: 50px;
+                        "
+                        >View or Manage Payment</a
+                      >
+                    </td>
+                  </tr>
+                  <!-- payment sub-text -->
+                  <tr>
+                    <td
+                      style="
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 40px;
+                        font-size: 14px;
+                      "
+                    >
+                      <p style="padding-left: 3px">
+                        It may take a few moments for this transaction to appear
+                        in your account.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of payment section -->
 
-                <!-- start of transaction info product section -->
-                <tr>
-                  <td width="40%" style="padding: 15px 10px; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; margin: 0;">1,700 Robux for Xbox:ROBLOX</p>
-                  </td>
-                  <td align="right" width="25%" style="padding: 15px 10px; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; margin: 0; ">&dollar;21.59 USD</p>
-                  </td>
-                  <td width="6%" style="padding: 15px 10px; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; margin: 0; display: block;">1</p>
-                  </td>
-                  <td align="right" width="29%" style="padding: 15px 10px; border-bottom: 1px solid #B7BCBF;">
-                    <p style="font-size: 14px; margin: 0;">&dollar;21.59 USD</p>
-                  </td>
-                </tr>
-                <!-- end of transaction info product section -->
-              </table>
-              <!-- start of transaction info total section -->
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <tr>
-                  <td style="padding-top: 30px; padding-right: 10px;">
-                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr align="right">
-                        <td>
-                          <span style="font-size: 14px;"><strong>Subtotal</strong></span>
-                        </td>
-                        <td width="27%"><span style="font-size: 14px;">
-                            &dollar;21.59 USD</span></td>
-                      </tr>
-                      <tr align="right">
-                        <td style="padding-top: 8px;">
-                          <span style="font-size: 14px;"><strong>Total</strong></span>
-                        </td>
-                        <td width="27%" style="padding-top: 8px;"><span style="font-size: 14px;">
-                            &dollar;21.59 USD</span></td>
-                      </tr>
-                      <tr align="right">
-                        <td style="padding-top: 15px;">
-                          <span style="font-size: 14px;"><strong>Payment</strong></span>
-                        </td>
-                        <td width="27%" style="padding-top: 15px;"><span style="font-size: 14px;">
-                            &dollar;21.59 USD</span></td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="right" style="padding-right: 10px;">
-                    <p style="font-size: 14px; line-height: 1.6; color: #001435;">Charge will appear on your credit card
-                      statement as "PAYPAL *MICROSOFT" <br>
-                      Payment sent from quandremyers@yahoo.com</p>
-                  </td>
-                </tr>
-              </table>
-              <!-- end of transaction info total section -->
+            <!-- start of Merchant info section -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  padding-left: 30px;
+                  padding-right: 30px;
+                  padding-bottom: 20px;
+                "
+              >
+                <table
+                  width="100%"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 20px 25px;
+                        border-radius: 20px;
+                        background-color: #ffffff;
+                        font-family: PayPal-Open, 'Helvetica Neue', Helvetica,
+                          Arial, sans-serif;
+                      "
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                      >
+                        <tr>
+                          <td
+                            class="section-wrap"
+                            width="50%"
+                            style="
+                              line-height: 1.8;
+                              padding-left: 10px;
+                              padding-bottom: 20px;
+                            "
+                          >
+                            <p
+                              style="
+                                font-size: 14px;
+                                font-weight: bold;
+                                margin: 0;
+                              "
+                            >
+                              Transaction ID
+                            </p>
+                            <a
+                              href="#"
+                              style="
+                                color: #0070e0;
+                                text-decoration: none;
+                                font-size: 14px;
+                              "
+                              >6F490637K1336655X</a
+                            >
+                          </td>
+                          <td
+                            class="section-wrap"
+                            width="50%"
+                            style="line-height: 1.8; padding-bottom: 20px"
+                          >
+                            <p
+                              style="
+                                font-size: 14px;
+                                font-weight: bold;
+                                margin: 0;
+                              "
+                            >
+                              Transaction date
+                            </p>
+                            <p style="font-size: 14px; margin: 0">
+                              Mar 11, 2023 15:35:47 EST
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="section-wrap"
+                            width="50%"
+                            style="
+                              line-height: 1.8;
+                              padding-bottom: 20px;
+                              padding-left: 10px;
+                            "
+                          >
+                            <p
+                              style="
+                                font-size: 14px;
+                                font-weight: bold;
+                                margin: 0;
+                              "
+                            >
+                              Merchant
+                            </p>
+                            <p style="font-size: 14px; margin: 0">
+                              Microsoft Corporation
+                            </p>
+                          </td>
+                          <td
+                            class="section-wrap"
+                            width="50%"
+                            style="line-height: 1.8; padding-bottom: 20px"
+                          >
+                            <p
+                              style="
+                                font-size: 14px;
+                                font-weight: bold;
+                                margin: 0;
+                              "
+                            >
+                              Instructions to merchant
+                            </p>
+                            <p style="font-size: 14px; margin: 0">
+                              You haven't entered any instructions.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="section-wrap"
+                            width="50%"
+                            style="line-height: 1.8; padding-left: 10px"
+                          >
+                            <p
+                              style="
+                                font-size: 14px;
+                                font-weight: bold;
+                                margin: 0;
+                              "
+                            >
+                              Invoice ID
+                            </p>
+                            <p style="font-size: 14px; margin: 0">
+                              Z521QZ8SEN6Q
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of Merchant info section -->
 
-              <!-- start of transaction info funding source section -->
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <tr align="right">
-                  <td style="padding-bottom: 10px;"><span style="font-size: 14px; "><strong>Funding Sources Used
-                        (Total)</strong></span></td>
-                </tr>
-                <tr align="right">
-                  <td>
-                    <span style="font-size: 14px;">Visa x-2023</span>
-                  </td>
-                  <td width="30%" style="padding-right: 10px;">
-                    <span style="font-size: 14px;">&dollar;21.59 USD</span>
-                  </td>
-                </tr>
-              </table>
-              <!-- end of transaction info funding source section -->
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <!-- start of transaction info button section -->
-                <tr>
-                  <td style="padding-top: 40px;">
-                    <a href=" #"
-                      style="text-decoration: none; font-size: 18px; color: #ffffff; background-color: #003087; padding: 14px 35px; border-radius: 50px">
-                      View
-                      or Manage Payment</a>
-                  </td>
-                </tr>
-                <!-- end of transaction info button section -->
-              </table>
+            <!-- start of transaction info section -->
+            <tr>
+              <td
+                style="
+                  padding-left: 30px;
+                  padding-right: 30px;
+                  padding-bottom: 40px;
+                  font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <table
+                  width="100%"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <!-- start of transaction info heading section -->
+                  <tr style="background-color: #f5f7fa">
+                    <td
+                      width="40%"
+                      style="
+                        padding: 15px 10px;
+                        border-top: 1px solid #b7bcbf;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p style="font-size: 14px; font-weight: bold; margin: 0">
+                        Description
+                      </p>
+                    </td>
+                    <td
+                      align="right"
+                      width="25%"
+                      style="
+                        padding: 15px 10px;
+                        border-top: 1px solid #b7bcbf;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p style="font-size: 14px; font-weight: bold; margin: 0">
+                        Unit price
+                      </p>
+                    </td>
+                    <td
+                      width="6%"
+                      style="
+                        padding: 15px 10px;
+                        border-top: 1px solid #b7bcbf;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p
+                        style="
+                          font-size: 14px;
+                          font-weight: bold;
+                          margin: 0;
+                          display: block;
+                        "
+                      >
+                        Qty
+                      </p>
+                    </td>
+                    <td
+                      align="right"
+                      width="29%"
+                      style="
+                        padding: 15px 10px;
+                        border-top: 1px solid #b7bcbf;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p style="font-size: 14px; font-weight: bold; margin: 0">
+                        Amount
+                      </p>
+                    </td>
+                  </tr>
+                  <!-- end of transaction info heading section -->
 
-            </td>
-          </tr>
-          <!-- end of transaction info section -->
+                  <!-- start of transaction info product section -->
+                  <tr>
+                    <td
+                      width="40%"
+                      style="
+                        padding: 15px 10px;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p style="font-size: 14px; margin: 0">
+                        1,700 Robux for Xbox:ROBLOX
+                      </p>
+                    </td>
+                    <td
+                      align="right"
+                      width="25%"
+                      style="
+                        padding: 15px 10px;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p style="font-size: 14px; margin: 0">
+                        &dollar;21.59 USD
+                      </p>
+                    </td>
+                    <td
+                      width="6%"
+                      style="
+                        padding: 15px 10px;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p style="font-size: 14px; margin: 0; display: block">
+                        1
+                      </p>
+                    </td>
+                    <td
+                      align="right"
+                      width="29%"
+                      style="
+                        padding: 15px 10px;
+                        border-bottom: 1px solid #b7bcbf;
+                      "
+                    >
+                      <p style="font-size: 14px; margin: 0">
+                        &dollar;21.59 USD
+                      </p>
+                    </td>
+                  </tr>
+                  <!-- end of transaction info product section -->
+                </table>
+                <!-- start of transaction info total section -->
+                <table
+                  width="100%"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td style="padding-top: 30px; padding-right: 10px">
+                      <table
+                        width="100%"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                      >
+                        <tr align="right">
+                          <td>
+                            <span style="font-size: 14px"
+                              ><strong>Subtotal</strong></span
+                            >
+                          </td>
+                          <td width="27%">
+                            <span style="font-size: 14px">
+                              &dollar;21.59 USD</span
+                            >
+                          </td>
+                        </tr>
+                        <tr align="right">
+                          <td style="padding-top: 8px">
+                            <span style="font-size: 14px"
+                              ><strong>Total</strong></span
+                            >
+                          </td>
+                          <td width="27%" style="padding-top: 8px">
+                            <span style="font-size: 14px">
+                              &dollar;21.59 USD</span
+                            >
+                          </td>
+                        </tr>
+                        <tr align="right">
+                          <td style="padding-top: 15px">
+                            <span style="font-size: 14px"
+                              ><strong>Payment</strong></span
+                            >
+                          </td>
+                          <td width="27%" style="padding-top: 15px">
+                            <span style="font-size: 14px">
+                              &dollar;21.59 USD</span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" style="padding-right: 10px">
+                      <p
+                        style="
+                          font-size: 14px;
+                          line-height: 1.6;
+                          color: #001435;
+                        "
+                      >
+                        Charge will appear on your credit card statement as
+                        "PAYPAL *MICROSOFT" <br />
+                        Payment sent from quandremyers@yahoo.com
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end of transaction info total section -->
 
-          <!-- start of footer section -->
-          <tr>
-            <td
-              style="font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial, sans-serif; ">
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <tr>
-                  <td style="padding-left: 30px;"><span style="font-size: 14px;"><strong>
-                        Issues with this transaction?</strong></span></td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 5px; padding-left: 30px;"><span style="font-size: 14px;">
-                      You have 180 days from the date of the transaction to open a dispute in the Resolution
-                      Center.</span></td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 40px;">
-                    <img src="img/paypal_image.png" alt="" width="280">
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 10px; padding-right: 35px;
-                  padding-left: 35px; ">
-                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                      style="border-top: 1px solid #B7BCBF;">
-                      <tr>
-                        <td style="padding-top: 10px;">
-                          <a href="#" style="font-size: 11px; text-decoration: none; color: #0070E0;">Help & Contact</a>
-                          <span style="font-size: 11px; text-decoration: none;">|</span>
-                          <a href="#" style="font-size: 11px; text-decoration: none; color: #0070E0;">Security</a>
-                          <span style="font-size: 11px; text-decoration: none;">|</span>
-                          <a href="#" style="font-size: 11px; text-decoration: none; color: #0070E0;">Apps</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 20px 35px 20px;">
-                    <table width="210" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr>
-                        <td><a href="#"><img src="img/twitter.png" alt="Twitter" width="28"></a></td>
-                        <td><a href="#"><img src="img/instagram.png" alt="Instagram" width="28"></a></td>
-                        <td><a href="#"><img src="img/facebook.png" alt="Facebook" width="28"></a></td>
-                        <td><a href="#"><img src="img/linkedin.png" alt="linkedin" width="28"></a></td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-left: 32px; padding-right: 1px; padding-bottom: 20px;">
-                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;"><strong>
-                              ADDITIONAL INFORMATION</strong></span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            PayPal, Inc., as the licensee, is liable for non-delivery or delayed delivery of your funds.
-                            PayPal, Inc. is licensed to receive and transmit money under New York law.</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            You have the right to cancel a transaction for a full refund unless your designated
-                            recipient has already received the payment. However, since most PayPal payments are received
-                            within seconds, you may not be able to cancel your payment for a full refund once the
-                            payment is made. To determine whether your payment is eligible for cancellation, log in to
-                            PayPal.com, select the transaction in your transaction details, and select Cancel, or call
-                            PayPal Customer Service at 888-221-1161. Disputes related to purchases are addressed in
-                            PayPal’s User Agreement.</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            PayPal is committed to preventing fraudulent emails. Emails from PayPal will always contain
-                            your full name. <a href="#">Learn to identify phishing</a></span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            Please don't reply to this email. To get in touch with us, click <a href="#">Help &
-                              Contact.</a></span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            PayPal Customer Service can be reached at 888-221-1161.</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            Not sure why you received this email?<a href="#">Learn more</a></span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            Copyright © 1999-2023 PayPal, Inc. All rights reserved. PayPal is located at 2211 N. First
-                            St., San Jose, CA 95131.</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 10px;">
-                          <span style="font-size: 11px;">
-                            PayPal RT000016:en_US(en-US):1.5.0:038e1eecc9024</span>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- end of footer section -->
-        </table>
-      </td>
-      <!-- end of email -->
-    </tr>
-  </table>
-</body>
+                <!-- start of transaction info funding source section -->
+                <table
+                  width="100%"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <tr align="right">
+                    <td style="padding-bottom: 10px">
+                      <span style="font-size: 14px"
+                        ><strong>Funding Sources Used (Total)</strong></span
+                      >
+                    </td>
+                  </tr>
+                  <tr align="right">
+                    <td>
+                      <span style="font-size: 14px">Visa x-2023</span>
+                    </td>
+                    <td width="30%" style="padding-right: 10px">
+                      <span style="font-size: 14px">&dollar;21.59 USD</span>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end of transaction info funding source section -->
+                <table
+                  width="100%"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <!-- start of transaction info button section -->
+                  <tr>
+                    <td style="padding-top: 40px">
+                      <a
+                        href=" #"
+                        style="
+                          text-decoration: none;
+                          font-size: 18px;
+                          color: #ffffff;
+                          background-color: #003087;
+                          padding: 14px 35px;
+                          border-radius: 50px;
+                        "
+                      >
+                        View or Manage Payment</a
+                      >
+                    </td>
+                  </tr>
+                  <!-- end of transaction info button section -->
+                </table>
+              </td>
+            </tr>
+            <!-- end of transaction info section -->
 
+            <!-- start of footer section -->
+            <tr>
+              <td
+                style="
+                  font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <table
+                  width="100%"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td style="padding-left: 30px">
+                      <span style="font-size: 14px"
+                        ><strong> Issues with this transaction?</strong></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-top: 5px; padding-left: 30px">
+                      <span style="font-size: 14px">
+                        You have 180 days from the date of the transaction to
+                        open a dispute in the Resolution Center.</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-top: 40px">
+                      <img src="img/paypal_image.png" alt="" width="280" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        padding-bottom: 10px;
+                        padding-right: 35px;
+                        padding-left: 35px;
+                      "
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        style="border-top: 1px solid #b7bcbf"
+                      >
+                        <tr>
+                          <td style="padding-top: 10px">
+                            <a
+                              href="#"
+                              style="
+                                font-size: 11px;
+                                text-decoration: none;
+                                color: #0070e0;
+                              "
+                              >Help & Contact</a
+                            >
+                            <span style="font-size: 11px; text-decoration: none"
+                              >|</span
+                            >
+                            <a
+                              href="#"
+                              style="
+                                font-size: 11px;
+                                text-decoration: none;
+                                color: #0070e0;
+                              "
+                              >Security</a
+                            >
+                            <span style="font-size: 11px; text-decoration: none"
+                              >|</span
+                            >
+                            <a
+                              href="#"
+                              style="
+                                font-size: 11px;
+                                text-decoration: none;
+                                color: #0070e0;
+                              "
+                              >Apps</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px 35px 20px">
+                      <table
+                        width="210"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                      >
+                        <tr>
+                          <td>
+                            <a href="#"
+                              ><img
+                                src="img/twitter.png"
+                                alt="Twitter"
+                                width="28"
+                            /></a>
+                          </td>
+                          <td>
+                            <a href="#"
+                              ><img
+                                src="img/instagram.png"
+                                alt="Instagram"
+                                width="28"
+                            /></a>
+                          </td>
+                          <td>
+                            <a href="#"
+                              ><img
+                                src="img/facebook.png"
+                                alt="Facebook"
+                                width="28"
+                            /></a>
+                          </td>
+                          <td>
+                            <a href="#"
+                              ><img
+                                src="img/linkedin.png"
+                                alt="linkedin"
+                                width="28"
+                            /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        padding-left: 32px;
+                        padding-right: 1px;
+                        padding-bottom: 20px;
+                      "
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                      >
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px"
+                              ><strong> ADDITIONAL INFORMATION</strong></span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              PayPal, Inc., as the licensee, is liable for
+                              non-delivery or delayed delivery of your funds.
+                              PayPal, Inc. is licensed to receive and transmit
+                              money under New York law.</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              You have the right to cancel a transaction for a
+                              full refund unless your designated recipient has
+                              already received the payment. However, since most
+                              PayPal payments are received within seconds, you
+                              may not be able to cancel your payment for a full
+                              refund once the payment is made. To determine
+                              whether your payment is eligible for cancellation,
+                              log in to PayPal.com, select the transaction in
+                              your transaction details, and select Cancel, or
+                              call PayPal Customer Service at 888-221-1161.
+                              Disputes related to purchases are addressed in
+                              PayPal’s User Agreement.</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              PayPal is committed to preventing fraudulent
+                              emails. Emails from PayPal will always contain
+                              your full name.
+                              <a href="#">Learn to identify phishing</a></span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              Please don't reply to this email. To get in touch
+                              with us, click
+                              <a href="#">Help & Contact.</a></span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              PayPal Customer Service can be reached at
+                              888-221-1161.</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              Not sure why you received this email?<a href="#"
+                                >Learn more</a
+                              ></span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              Copyright © 1999-2023 PayPal, Inc. All rights
+                              reserved. PayPal is located at 2211 N. First St.,
+                              San Jose, CA 95131.</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 10px">
+                            <span style="font-size: 11px">
+                              PayPal
+                              RT000016:en_US(en-US):1.5.0:038e1eecc9024</span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end of footer section -->
+          </table>
+        </td>
+        <!-- end of email -->
+      </tr>
+    </table>
+  </body>
 </html>

@@ -42,7 +42,7 @@
     table-layout: fixed !important;
   }
 
-  @media only screen and (min-width: 960px) {
+  /* @media only screen and (min-width: 960px) {
     .container {
       max-width: 600px;
     }
@@ -52,7 +52,7 @@
     .container {
       width: 600px;
     }
-  }
+  } */
 
   @media only screen and (max-width: 600px) {
     .container {
@@ -80,7 +80,9 @@
       max-width: 100% !important;
     }
 
-
+    .btn {
+      width: 100% !important;
+    }
 
     .feature-section {
       padding-left: 24px !important;
@@ -480,10 +482,10 @@
                       <!-- feature -->
                       <tr>
                         <td style="padding: 0 50px" class="feature-section">
-                          <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                          <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                               <!-- col 1 -->
-                              <td width="33%" class="stack-column" style="padding-bottom: 30px">
+                              <td width="33%" align="center" class="stack-column" style="padding-bottom: 30px">
                                 <table width="184" valign="top" border="0" cellpadding="0" cellspacing="0"
                                   role="presentation">
                                   <!-- image -->
@@ -515,7 +517,7 @@
                               </td>
                               <!-- /col 1 -->
                               <!-- col 2 -->
-                              <td width="33%" class="stack-column" style="padding-bottom: 30px">
+                              <td width="33%" align="center" class="stack-column" style="padding-bottom: 30px">
                                 <table width="184" valign="top" border="0" cellpadding="0" cellspacing="0"
                                   role="presentation">
                                   <!-- image -->
@@ -546,7 +548,7 @@
                               </td>
                               <!-- /col 2 -->
                               <!-- col 3 -->
-                              <td width="33%" class="stack-column" style="padding-bottom: 30px">
+                              <td width="33%" align="center" class="stack-column" style="padding-bottom: 30px">
                                 <table width="184" valign="top" border="0" cellpadding="0" cellspacing="0"
                                   role="presentation">
                                   <!-- image -->
@@ -578,11 +580,12 @@
                               </td>
                               <!-- /col 3 -->
                             </tr>
-                            <!-- button -->
+                          </table>
+                          <!-- button -->
                             <tr>
                               <td align="center">
-                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"
-                                  role="presentation">
+                                <table width="30%" align="center" border="0" cellpadding="0" cellspacing="0"
+                                  role="presentation" class="btn">
                                   <tr>
                                     <td style="
                                           background-color: #00ff84;
@@ -606,7 +609,6 @@
                               </td>
                             </tr>
                             <!-- /button -->
-                          </table>
                         </td>
                       </tr>
 
