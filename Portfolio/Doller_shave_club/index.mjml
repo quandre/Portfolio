@@ -1,0 +1,407 @@
+<mjml>
+  <mj-head>
+    <mj-style> * { box-sizing: border-box; } } </mj-style>
+    <mj-style inline="inline">
+      .button { display: inline-block; padding-top: 10px; padding-left: 25px;
+      padding-bottom: 10px; padding-right: 25px; text-decoration: none;
+      text-transform: uppercase; font-size: 18px; font-weight: 800;
+      color:#ffffff; background-color: #ff5600; border-radius: 4px; }
+      .button-small { display: inline-block; padding-top: 10px; padding-left:
+      24px; padding-bottom: 10px; padding-right: 24px; background-color:
+      #ff5600; border-radius: 4px; font-size: 21px; font-weight: 700; color:
+      #ffffff; text-decoration: none; text-transform: uppercase; } .button-black
+      { display: inline-block; padding-top: 10px; padding-left: 25px;
+      padding-bottom: 10px; padding-right: 25px; background-color: #141414;
+      border-radius: 4px; font-size: 21px; font-weight: 700; color: #ffffff;
+      text-decoration: none; text-transform: uppercase; } .footer-link { color:
+      #ffffff;} .icons-size { max-width: 280px; padding: 0; }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#ffffff">
+    <mj-raw>
+      <!-- Hero -->
+    </mj-raw>
+    <mj-section css-class="hero">
+      <mj-column>
+        <mj-image
+          alt="Upgrade your routine"
+          src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/c66cb052-ffc9-0552-7484-4f9497e7a960.jpg"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /Hero -->
+    </mj-raw>
+
+    <mj-raw>
+      <!-- Ready Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column width="460px">
+        <mj-text
+          color="#141414"
+          font-size="28px"
+          font-weight="700"
+          align="center"
+        >
+          Ready to shake things up?
+        </mj-text>
+        <mj-text color="#141414" font-size="21px" padding="10px" align="center">
+          We've added some fresh products to help you level up your grooming
+          game. Plus, our grooming experts have put together some pro tips to
+          help you get the most out of them:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /Ready Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- Tip Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column width="470px">
+        <mj-raw>
+          <!-- Title -->
+        </mj-raw>
+        <mj-text
+          color="#ff5600"
+          font-size="30px"
+          font-weight="800"
+          text-transform="uppercase"
+          align="center"
+        >
+          GROOMING PRO TIPS
+        </mj-text>
+        <mj-raw>
+          <!-- Paragraph -->
+        </mj-raw>
+        <mj-text>
+          <mj-raw>
+            <ul align="left" type="disc" style="font-size: 21px">
+              <li>Start with a clean base</li>
+              <li>Use fresh products</li>
+              <li>Choose the right shave aid for your skin</li>
+              <li>
+                Change blades every week or every other week depending on your
+                frequency
+              </li>
+            </ul>
+          </mj-raw>
+        </mj-text>
+        <mj-raw>
+          <!-- CTA Button -->
+        </mj-raw>
+        <mj-text align="center">
+          <a href="#" class="button">Grooming Guide</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /Tip Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- Refresh Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="28px"
+          font-weight="700"
+          color="#141414"
+        >
+          Refresh your box:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /Refresh Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- product 1 Section -->
+    </mj-raw>
+    <mj-section direction="rtl">
+      <mj-column width="50%">
+        <mj-image
+          width="280px"
+          src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/baa01e59-fb26-1ca7-daf4-a2a8b5f8fcff.jpg"
+          alt="Shave Butter"
+        />
+      </mj-column>
+      <mj-column width="50%">
+        <mj-raw>
+          <!-- Title-->
+        </mj-raw>
+        <mj-text font-size="30px" font-weight="800" color="#141414">
+          Shave Butter
+        </mj-text>
+        <mj-raw>
+          <!-- Paragraph -->
+        </mj-raw>
+        <mj-text
+          font-size="21px"
+          color="#141414"
+          padding-top="10px"
+          padding-bottom="16px"
+          line-height="25px"
+        >
+          A gentle, translucent formula for a smoother shave, fewer bumps, and
+          effortless glide.
+        </mj-text>
+        <mj-raw>
+          <!-- CTA Button -->
+        </mj-raw>
+        <mj-text css-class="button-center">
+          <a href="#" class="button-small">Buy now</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /product 1 Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- product 2 Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="260px"
+          src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/f2e491a6-b91f-f10e-b5ec-5b8ee69412a0.jpg"
+          alt="Razor"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-raw>
+          <!-- Title-->
+        </mj-raw>
+        <mj-text font-size="30px" font-weight="800" color="#141414">
+          Club Series Diamond Grip Handle:
+        </mj-text>
+        <mj-raw>
+          <!-- Paragraph -->
+        </mj-raw>
+        <mj-text
+          font-size="21px"
+          color="#141414"
+          padding-top="10px"
+          padding-bottom="16px"
+          line-height="25px"
+        >
+          Pair your 4 or 6 Blade Club Series with our weighty, diamond-grip
+          handle—designed for comfort, control, and a sleek bathroom upgrade.
+        </mj-text>
+        <mj-raw>
+          <!-- CTA Button -->
+        </mj-raw>
+        <mj-text css-class="button-center">
+          <a href="#" class="button-small">Buy now</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /product 2 Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- product 3 Section -->
+    </mj-raw>
+    <mj-section direction="rtl">
+      <mj-column>
+        <mj-image
+          width="260px"
+          src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/8bd542c7-f0d2-55ef-260a-ca49808896fc.jpg"
+          alt="Wipes"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-raw>
+          <!-- Title-->
+        </mj-raw>
+        <mj-text font-size="30px" font-weight="800" color="#141414">
+          One Wipe Charlies Butt Wipes:
+        </mj-text>
+        <mj-raw>
+          <!-- Paragraph -->
+        </mj-raw>
+        <mj-text
+          font-size="21px"
+          color="#141414"
+          padding-top="10px"
+          padding-bottom="16px"
+          line-height="25px"
+        >
+          Minty fresh, gentle, and flushable for a clean that’s as soothing as
+          it is effective.
+        </mj-text>
+        <mj-raw>
+          <!-- CTA Button -->
+        </mj-raw>
+        <mj-text>
+          <a href="#" class="button-small">Buy now</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /product 3 Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- product 4 Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-image
+          width="280px"
+          src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/0dd682f5-32b1-5d6a-001b-ec6c8a8bfb19.jpg"
+          alt="Post Shave Serum"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-raw>
+          <!-- Title-->
+        </mj-raw>
+        <mj-text font-size="30px" font-weight="800" color="#141414">
+          Post Shave Dew:
+        </mj-text>
+        <mj-raw>
+          <!-- Paragraph -->
+        </mj-raw>
+        <mj-text
+          font-size="21px"
+          color="#141414"
+          padding-top="10px"
+          padding-bottom="16px"
+          line-height="25px"
+        >
+          A fast-absorbing, aloe-infused serum that soothes, hydrates, and calms
+          post-shave skin—no creams, no fuss, just refreshment.
+        </mj-text>
+        <mj-raw>
+          <!-- CTA Button -->
+        </mj-raw>
+        <mj-text>
+          <a href="#" class="button-small">Buy now</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /product 4 Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- Explore CTA Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-text align="center">
+          <a align="center" href="#" class="button-black"
+            >EXPLORE NEW PRODUCTS</a
+          >
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /Explore CTA Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- Shave kit Section -->
+    </mj-raw>
+    <mj-section padding-bottom="0">
+      <mj-column>
+        <mj-image
+          padding-bottom="0"
+          src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/b034a623-2f87-8a87-4d20-e29d942ad58b.jpg"
+          alt="Shave Kit"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /Shave kit Section -->
+    </mj-raw>
+    <mj-raw>
+      <!-- footer Section -->
+    </mj-raw>
+    <mj-section background-color="#141414" padding-bottom="0">
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="24px"
+          font-weight="800"
+          color="#ffffff"
+          text-transform="uppercase"
+        >
+          dollar shave club
+        </mj-text>
+        <mj-text align="center" font-size="16px" color="#ffffff">
+          Question?
+          <a href="#" class="footer-link">Contact a Club Pro</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#141414" padding="10px 0 0 0">
+      <mj-group css-class="icons-size">
+        <mj-column padding="0">
+          <mj-image
+            padding="0 5px"
+            width="33px"
+            src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/0e3c2627-6d52-b55f-82aa-42b9ee346f8d.png"
+            alt="Dollar Shave Club on Facebook"
+          />
+        </mj-column>
+        <mj-column>
+          <mj-image
+            padding="0 5px"
+            width="33px"
+            src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/897fe57e-11cc-da8f-520f-ed3f3326bd5d.png"
+            alt="Dollar Shave Club on twitter"
+          />
+        </mj-column>
+        <mj-column>
+          <mj-image
+            padding="0 5px"
+            width="33px"
+            src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/054f1e99-ba2a-4901-a8fc-8cfa34bb6760.png"
+            alt="Dollar Shave Club on youtube"
+          />
+        </mj-column>
+        <mj-column>
+          <mj-image
+            padding="0 5px"
+            width="33px"
+            src="https://mcusercontent.com/79c2ef9ead7bfb5b9474b9409/images/859f313a-9e04-7b0a-519c-990fa1f9e631.png"
+            alt="Dollar Shave Club on instagram"
+          />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="#141414">
+      <mj-column>
+        <mj-text
+          padding-bottom="0"
+          align="center"
+          color="#ffffff"
+          font-size="11px"
+          letter-spacing="1px"
+        >
+          &copy;2024 Dollar Shave Club. All Rights Reserved.
+        </mj-text>
+        <mj-text
+          align="center"
+          color="#ffffff"
+          font-size="11px"
+          letter-spacing="1px"
+        >
+          13335 Maxella Ave. Marina del Rey, CA 90292
+        </mj-text>
+        <mj-text align="center" color="#ffffff">
+          No longer want to receive these emails?.
+          <a href="#" class="footer-link" font-size="13px">Unsubscribe</a>
+        </mj-text>
+        <mj-text align="center">
+          <a href="#" class="footer-link" font-size="13px">Privacy</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- /footer Section -->
+    </mj-raw>
+  </mj-body>
+</mjml>
